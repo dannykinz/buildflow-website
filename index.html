@@ -97,7 +97,175 @@
             </section>
 
             <!-- How it works Section -->
+            <section class="how-it-works">
+                <h2 class="section-title">From idea to working app in 4 steps</h2>
+                <div class="steps-grid">
+                    <div class="step-card full-width">
+                        <div class="step-content">
+                            <h3>Think your idea</h3>
+                            <p>Start with something simple you want to build.</p>
+                        </div>
+                        <img
+                            src="/assets/How it woks step 1.jpg"
+                            alt="Step 1 Image"
+                            class="step-image" />
+                    </div>
+                    <div class="step-card half-width">
+                        <div class="step-content">
+                            <h3>Structure your pages</h3>
+                            <p>Create your HTML layout across multiple pages.</p>
+                        </div>
+                        <img
+                            src="/assets/How it woks step 2.jpg"
+                            alt="Step 2 Image"
+                            class="step-image" />
+                    </div>
+                    <div class="step-card half-width">
+                        <div class="step-content">
+                            <h3>Style with CSS</h3>
+                            <p>Make it clean, readable, and responsive.</p>
+                        </div>
+                        <img
+                            src="/assets/How it woks step 3.jpg"
+                            alt="Step 3 Image"
+                            class="step-image" />
+                    </div>
+                    <div class="step-card full-width">
+                        <div class="step-content">
+                            <h3>Add JavaScript</h3>
+                            <p>Bring your project to life with real interactions.</p>
+                        </div>
+                        <img
+                            src="/assets/How it woks step 4.jpg"
+                            alt="Step 4 Image"
+                            class="step-image" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Countdown Section -->
+            <section class="countdown">
+                <h2 class="section-title">Next Build Challenge Starts In:</h2>
+                <div class="timer">
+                    <div class="time-segment">
+                        <span id="days">00</span>
+                        <span class="label">Days</span>
+                    </div>
+                    <div class="time-segment">
+                        <span id="hours">00</span>
+                        <span class="label">Hours</span>
+                    </div>
+                    <div class="time-segment">
+                        <span id="minutes">00</span>
+                        <span class="label">Minutes</span>
+                    </div>
+                    <div class="time-segment">
+                        <span id="seconds">00</span>
+                        <span class="label">Seconds</span>
+                    </div>
+                </div>
+                <p class="subtext">
+                    Join the next live build session and create your first real project.
+                </p>
+                <a href="get-started.html" class="cta-btn">Join Now</a>
+            </section>
+
+            <!-- FAQs Section -->
+            <section class="faqs">
+                <h2 class="section-title">Got questions?</h2>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is BuildFlow?</span>
+                        <i class="bx bx-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A simple way to learn by building real projects using code.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do I need experience?</span>
+                        <i class="bx bx-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No. You’ll learn step by step.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What will I build?</span>
+                        <i class="bx bx-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A complete multi-page website with interactive features.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is this beginner friendly?</span>
+                        <i class="bx bx-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. Everything is explained clearly.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Will I use JavaScript?</span>
+                        <i class="bx bx-plus faq-icon"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. You’ll build real interactive components.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <h2 class="section-title">Get new build ideas and tutorials</h2>
+                <p>No spam. Just practical things you can build and learn from.</p>
+                <button id="join-newsletter-btn" class="cta-btn">Join Newsletter</button>
+            </section>
+
+            <!-- Modal -->
+            <div id="newsletter-modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-modal" class="close">&times;</span>
+                    <h2>Join BuildFlow</h2>
+                    <form id="newsletter-form">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required />
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Your Email"
+                            required />
+                        <button type="submit" class="submit-btn">Subscribe</button>
+                    </form>
+                    <p id="success-message" class="success-message"></p>
+                </div>
+            </div>
         </main>
+
+        <!-- Footer -->
+        <footer>
+            <h2 class="footer-logo">BuildFlow</h2>
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <p>Build real projects. Learn by doing.</p>
+                </div>
+                <div class="footer-column">
+                    <a href="index.html">Home</a>
+                    <a href="features.html">Features</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+            <p class="copyright">© 2026 BuildFlow. All rights reserved.</p>
+        </footer>
         <script src="app.js"></script>
     </body>
 </html>
